@@ -45,7 +45,7 @@ script = """
 loadfile input.png image
 brightness image 50
 invert image
-render image output.png
+render image output
 """
 
 # Execute the script
