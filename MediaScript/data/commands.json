@@ -1,0 +1,241 @@
+[
+  {
+    "name": "set",
+    "args": [
+      { "name": "variable_name", "type": "string" },
+      { "name": "expression", "type": "string" }
+    ]
+  },
+  {
+    "name": "get",
+    "args": [
+      { "name": "media_name", "type": "string" },
+      { "name": "property", "type": "string" },
+      { "name": "target_variable", "type": "string" }
+    ]
+  },
+  {
+    "name": "load",
+    "args": [
+      { "name": "url", "type": "string" },
+      { "name": "name", "type": "string" }
+    ]
+  },
+  {
+    "name": "loadfile",
+   "args": [
+      { "name": "file_path", "type": "string" },
+      { "name": "name", "type": "string" }
+    ]
+  },
+  {
+    "name": "tti",
+    "args": [
+      { "name": "name", "type": "string" },
+      { "name": "font_size", "type": "number" },
+      { "name": "wrap_width", "type": "number" },
+      { "name": "color", "type": "color" },
+      { "name": "text", "type": "string" }
+    ]
+  },
+  {
+    "name": "invert",
+    "args": [
+      { "name": "media_name", "type": "string" }
+    ]
+  },
+  {
+    "name": "clone",
+    "aliases": ["copy"],
+    "args": [
+      { "name": "existing_media", "type": "string" },
+      { "name": "new_name", "type": "string" }
+    ]
+  },
+  {
+    "name": "snip",
+    "args": [
+      { "name": "media_name", "type": "string" },
+      { "name": "start_time", "type": "number" },
+      { "name": "end_time", "type": "number" }
+    ]
+  },
+  {
+    "name": "crop",
+    "args": [
+      { "name": "media_name", "type": "string" },
+      { "name": "width", "type": "number" },
+      { "name": "height", "type": "number" },
+      { "name": "x", "type": "number" },
+      { "name": "y", "type": "number" }
+    ]
+  },
+  {
+    "name": "join",
+    "args": [
+      { "name": "media1", "type": "string" },
+      { "name": "media2", "type": "string" },
+      { "name": "vertical", "type": "bool" }
+    ]
+  },
+  {
+    "name": "convert",
+    "args": [
+      { "name": "media_name", "type": "string" },
+      { "name": "mime_type", "type": "string" }
+    ]
+  },
+  {
+    "name": "overlay",
+    "args": [
+      { "name": "base_media", "type": "string" },
+      { "name": "top_media", "type": "string" },
+      { "name": "x", "type": "number" },
+      { "name": "y", "type": "number" }
+    ]
+  },
+  {
+    "name": "rotate",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "degrees", "type": "number" },
+      {"name":"background_color","type":"color"},
+      {"name":"crop","type":"bool"}
+    ]
+  },
+  {
+    "name": "reverse",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "audio", "type": "bool" }
+    ]
+  },
+    {
+    "name": "speed",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "speed", "type": "number" }
+    ]
+  },
+  {
+    "name": "hueshifthsv",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "degrees", "type": "number" }
+    ]
+  },
+  {
+    "name": "swirl",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "strength", "type": "number" }
+    ]
+  },
+  {
+    "name": "explode",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "strength", "type": "number" }
+    ]
+  },
+  {
+    "name": "flip",
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "flop",
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "haah",
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "waaw",
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "woow",
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "hooh",
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "grayscale",
+    "aliases": ["gray"],
+    "args": [
+      { "name": "media", "type": "string" }
+    ]
+  },
+  {
+    "name": "contrast",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "contrast", "type": "number" }
+    ]
+  },
+  {
+    "name": "brightness",
+    "aliases": ["lighten"],
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "brightness", "type": "number" }
+    ]
+  },
+  {
+    "name": "darken",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "brightness", "type": "number" }
+    ]
+  },
+  {
+    "name": "blur",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "scale", "type": "number" }
+    ]
+  },
+  {
+    "name": "volume",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "volume", "type": "number" }
+    ]
+  },
+  {
+    "name": "audiopitch",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "pitch", "type": "number" }
+    ]
+  },
+  {
+    "name": "audioputmix",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "media2", "type": "string" }
+    ]
+  },
+  {
+    "name": "render",
+    "args": [
+      { "name": "media", "type": "string" },
+      { "name": "name", "type": "string" }
+    ]
+  }
+]

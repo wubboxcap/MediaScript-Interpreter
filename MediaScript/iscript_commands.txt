@@ -1,0 +1,69 @@
+class MediaScriptActions (Enumerable):
+ASCII = ['ascii'] # ascii MEDIA_NAME
+ASCII_TEXT = ['asciit', 'asciitext'] # asciit MEDIA_NAME TEXT
+AUDIO_BOOST_BASS = ['audioboostbass'] # audioboostbass MEDIA_NAME
+AUDIO_COMPRESS = ['audiocompress'] # audiocompress MEDIA_NAME
+AUDIO_DESTROY = ['audiodestroy'] # audiodestroy MEDIA_NAME
+AUDIO_PUT_CONCAT = ['audioputconcat'] # audioputconcat MEDIA_NAME AUDIO_NAME LONGEST=false. LOOP=true
+·AUDIO_PUT_MIX => ['audioputmix'] # audioputmix MEDIA_NAME AUDIO_NAME LONGEST=false. LOOP=true
+AUDIO_PUT_REPLACE = ['audioputreplace'] # audioputreplace MEDIA_NAME AUDIO_NAME LONGEST=false. LOOP=true
+BACKGROUND_REMOVE = ['background remove', 'bgrm'] # bgrm MEDIA_NAME MODEL=ISNET_GENERAL_USE
+BLUR = ['blur'] # blur MEDIA_NAME SCALE
+BRIGHTNESS = ['brightness', 'lighten'] # brightness MEDIA_NAME PERCENTAGE
+BRIGHTNESS_DARKEN = ['darken'] # darken MEDIA_NAME PERCENTAGE
+CAPTION = ['caption'] # caption MEDIA_NAME TEXT-
+CLONE = ['clone', 'copy'] # clone MEDIA_NAME MEDIA_NAME_TO
+CHROMAKEY = ['chromakey'] # chromakey MEDIA_NAME COLOR=black SIMILARITY=0.01 BLEND=0
+CONCAT = ['concat'] # concat MEDIA_NAME MEDIA_NAME_2
+CONTRAST = ['contrast'] # contrast MEDIA_NAME PERCENTAGE
+CONVERT = ['convert'] # convert MEDIA_NAME MIMETYPE
+CREATE = ['create'] # create MEDIA_NAME WIDTH HEIGHT RED=0· GREEN=0 · BLUE=0⚫ ALPHA?
+CROP = ['crop'] # crop MEDIA_NAME WIDTH HEIGHT X=0 Y=0
+CROP_AUTO =['cropauto', 'cropsmart'] # cropauto MEDIA_NAME-
+CROP_CIRCLE = ['cropcircle'] # crop circle MEDIA_NAME
+CROP_NFT = ['cropnft'] # cropnft MEDIA_NAME
+CROP_TRANSPARENCY = ['croptransparency'] # croptransparency MEDIA_NAME MEDIA_NAME_2
+DEEPFRY = ['deepfry'] # deepfry MEDIA_NAME SCALE=10
+DISTORT = ['distort'] # distort MEDIA_NAME METHOD ARGUMENTS-
+EDIT = ['edit'] # edit MEDIA_NAME TEXT-
+EXPLODE = ['explode', 'fish', 'fisheye'] # explode MEDIA_NAME SCALE=1-
+·FLIP = ['flip'] # flip MEDIA_NAME
+FLOP = ['flop'] # flop MEDIA_NAME
+GET = ['get'] # get MEDIA_NAME VALUE VARIABLE_NAME
+GRAYSCALE = ['grayscale', 'gray', 'greyscale', 'grey'] # grayscale MEDIA_NAME-
+IMAGINE = ['imagine'] # imagine MEDIA_NAME TEXT-
+IMPLODE = ['implode'] # implode MEDIA_NAME SCALE
+INVERT = ['inverse', 'invert'] # invert MEDIA_NAME
+JOIN = ['join'] # join MEDIA_NAME MEDIA_NAME_2 VERTICAL=false LOOP=true NORESIZE=false
+JPEG = ['jpeg', 'jpg'] # jpeg MEDIA_NAME QUALITY
+LOAD = ['load'] # load URL MEDIA_NAME AUDIO_PRIORITY?
+MAGIK = ['magik', 'magick', 'magic'] # magik MEDIA_NAME ITERATIONS=1 RESCALE=false
+MEME = ['meme'] # meme MEDIA_NAME TEXT
+MIRROR_BOTTOM= ['mirrorbottom', 'hooh'] # mirrorbottom MEDIA_NAME-
+MIRROR_LEFT = ['mirrorleft', 'haah'] # mirrorleft MEDIA_NAME
+MIRROR_RIGHT = ['mirrorright', 'waaw'] # mirrorright MEDIA_NAME
+MIRROR_TOP = ['mirrortop', 'woow'] # mirrortop MEDIA_NAME
+OPACITY = ['alpha', 'fade', 'opacity', 'transparency'] # opacity MEDIA_NAME ALPHA
+OVERLAY = ['overlay'] # overlay MEDIA_NAME MEDIA_NAME_2. X=0 Y=0 COLOR? SIMILARITY=0.01 BLEND=0 LOOP=true
+PIXELATE = ['pixelate', 'pixel'] # pixelate MEDIA_NAME PIXEL_SIZE=9
+RENDER = ['render'] # render MEDIA_NAME MIMETYPE
+REPEAT = ['repeat'] # repeat MEDIA_NAME AMOUNT=2
+REPEAT_DURATION = ['repeatduration'] # repeatduration MEDIA_NAME DURATION
+RESIZE = ['resize'] # resize MEDIA_NAME WIDTH HEIGHT-
+RESIZE_CONTAIN = ['contain'] # contain MEDIA_NAME WIDTH HEIGHT¬
+RESIZE_COVER = ['cover'] # cover MEDIA_NAME WIDTH HEIGHT¬
+RESIZE_FIT = ['fit'] # fit MEDIA_NAME WIDTH HEIGHT
+RESIZE_SCALE = ['scale'] # scale MEDIA_NAME SCALE-
+REVERSE = ['reverse'] # reverse MEDIA_NAME
+ROTATE = ['rotate'] # rotate MEDIA_NAME DEGREES
+SCREENSHOT = ['screenshot'] # screenshot URL MEDIA_NAME
+SHARPEN = ['sharpen'] # sharpen MEDIA_NAME SCALE
+SKEW = ['skew'] # skew MEDIA_NAME AMOUNT VERTICAL=false
+SNIP = ['snip'] # snip MEDIA_NAME START END?
+SPEED = ['speed'] # speed MEDIA_NAME SPEED
+TEXT = ['text', 'tti'] # tti MEDIA_NAME FONT_SIZE WRAP_WIDTH COLOR....TEXT-
+TEXT_LEFT = ['ttil'] # ttil MEDIA_NAME FONT_SIZE WRAP_WIDTH COLOR...TEXT-
+TEXT_RIGHT = ['ttir'] # ttir MEDIA_NAME FONT_SIZE WRAP_WIDTH COLOR....TEXT-
+TEXT_TO_SPEECH = ['tts'] # tts MEDIA_NAME VOICE? ...TEXT-
+TRIM = ['trim'] # trim MEDIA_NAME THRESHOLD=10
+VOLUME = ['volume'] # volume MEDIA_NAME AMOUNT-
