@@ -13,10 +13,12 @@ A Python implementation of the MediaScript interpreter—a powerful domain-speci
 ## Installation
 
 ### Requirements
-
+#### Python
 - Python 3.7+
 - Pillow (PIL)
-
+#### Packages
+- [FFmpeg](https://ffmpeg.org/download.html)
+- [ImageMagick](https://imagemagick.org/script/download.php#gsc.tab=0)
 ### Setup
 
 1. Clone the repository:
